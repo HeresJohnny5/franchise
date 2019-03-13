@@ -1,6 +1,7 @@
 /********************/
 /* BRANDING */
 /********************/
+/* font-color - #212529 */
 
 /********************/
 /* UNIVERSAL CSS */
@@ -38,7 +39,7 @@
 }
 
 /********************/
-/* HERO CSS */
+/* HERO SECTION CSS */
 /********************/
 .hero-img {
 	background-attachment: fixed;
@@ -46,4 +47,17 @@
 	background-position: top;
 	background-size: cover;
 	height: 100vh;
+}
+
+/********************/
+/* JUNK REMOVAL SECTION CSS */
+/********************/
+.vanilla-anchor {
+	border-bottom: 1px solid #212529;
+	color: #212529;
+}
+
+.vanilla-anchor:hover {
+	color: #212529;
+	text-decoration: none;
 }
