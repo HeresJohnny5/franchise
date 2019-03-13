@@ -61,3 +61,15 @@
 	color: #212529;
 	text-decoration: none;
 }
+
+/********************/
+/* REQUEST A QUOTE SECTION CSS */
+/********************/
+#veteran-owned--logo {
+	width: 10em;
+}
+
+.request-quote-text > p {
+	font-size: 1.5em;
+	font-weight: 300;
+}
