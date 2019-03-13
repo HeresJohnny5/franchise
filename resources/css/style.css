@@ -36,3 +36,14 @@
 	font-size: 1.25em;
 	font-weight: 500;
 }
+
+/********************/
+/* HERO CSS */
+/********************/
+.hero-img {
+	background-attachment: fixed;
+	background-image: url("../../images/hero.jpg");
+	background-position: top;
+	background-size: cover;
+	height: 100vh;
+}
