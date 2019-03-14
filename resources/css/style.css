@@ -111,3 +111,26 @@ h2, h3 {
 .home-advisor {
 	width: 30%;
 }
+
+/********************/
+/* JUNK WE REMOVE SECTION CSS */
+/********************/
+.junk-we-remove-text > p {
+	font-size: 2.25em;
+	margin-bottom: .5em;
+}
+
+.trash-items > li {
+	font-size: 2em;
+	margin-left: 1em;
+}
+
+.trash-items > li > a {
+	border-bottom: 1px solid #212529;
+	color: #212529;
+}
+
+.trash-items > li > a:hover {
+	color: #212529;
+	text-decoration: none;
+}
