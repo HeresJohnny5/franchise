@@ -73,3 +73,17 @@
 	font-size: 1.5em;
 	font-weight: 300;
 }
+
+/********************/
+/* INSTAGRAM SECTION CSS */
+/********************/
+#instagram-row > .col-md-6 {
+	padding: .25em;
+}
+
+.instagram-logo {
+	bottom: 1em;
+	left: 2em;
+	position: absolute;
+	width: 4.5em;
+}
