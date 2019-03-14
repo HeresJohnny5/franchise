@@ -134,3 +134,43 @@ h2, h3 {
 	color: #212529;
 	text-decoration: none;
 }
+
+/********************/
+/* FOOTER SECTION CSS */
+/********************/
+footer {
+	background-color: #231f20;
+	padding: 4em 0;
+}
+
+.footer-list {
+	margin-bottom: 10em;
+}
+
+.footer-list > li, .footer-sub-list > li {
+	display: inline-block;
+}
+
+.footer-list > li:nth-child(2), .footer-sub-list > li:nth-child(2) {
+	margin: 0 3em;
+}
+
+.footer-list > li > a, .footer-sub-list > li > a {
+	color: #fff;
+}
+
+.footer-list > li > a {
+	font-size: 1.5em;
+}
+
+.footer-sub-list > li > a {
+	font-size: 1em;
+}
+
+.footer-list > li > a:hover, .footer-sub-list > li > a:hover {
+	text-decoration: none;
+}
+
+.footer-logo {
+	width: 18%;
+}
