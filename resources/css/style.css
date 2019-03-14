@@ -16,7 +16,7 @@
 	/* border: 1px solid red; */
 }
 
-h3 {
+h2, h3 {
 	font-size: 2.5em;
 }
 
@@ -59,6 +59,7 @@ h3 {
 .vanilla-anchor {
 	border-bottom: 1px solid #212529;
 	color: #212529;
+	font-weight: bold;
 }
 
 .vanilla-anchor:hover {
@@ -90,4 +91,23 @@ h3 {
 	left: 2em;
 	position: absolute;
 	width: 4.5em;
+}
+
+/********************/
+/* TOP RATED SECTION CSS */
+/********************/
+#top-rated {
+	margin: 8em 0;
+}
+
+.col-md-4 {
+	padding: 0;
+}
+
+.google, .facebook {
+	width: 75%;
+}
+
+.home-advisor {
+	width: 30%;
 }
