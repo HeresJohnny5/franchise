@@ -11,9 +11,6 @@
 	/* The box-sizing propery is used to tell the browser what the sizing properties (width and height) should include; border-box includes content, padding, and border, but not the margin */
 	margin: 0;
 	padding: 0;
-
-	/* background-color: #FAFAFA; */
-	/* border: 1px solid red; */
 }
 
 h2, h3 {
@@ -51,6 +48,36 @@ h2, h3 {
 	background-position: top;
 	background-size: cover;
 	height: 100vh;
+
+	position: relative;
+}
+
+.hero-container {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 0;
+	padding: 1em 0;
+}
+
+.map-pin {
+	float: left;
+	width: 1.5em;
+}
+
+.hero-location {
+	color: #fff;
+	float: right;
+	font-size: 2em;
+	font-style: italic;
+	margin: 0 0 0 1em;
+}
+
+.form-header {
+	color: #fff;
+	float: left;
+	font-size: 2em;
+	font-style: italic;
+	margin: .12em 1em 0 0;
 }
 
 /********************/
