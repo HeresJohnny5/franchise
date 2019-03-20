@@ -71,31 +71,62 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
+
               <!-- Modal Body -->
               <div class="modal-body">
-                <div class="form-group">
+                <!-- Email address / email -->
+                <div data-section="email" class="form-group spa-section">
                   <label for="exampleFormControlInput1">Email address</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
-                <div class="form-group">
+
+                <!-- Zipcode / Text -->
+                <div data-section="zipcode" class="form-group spa-section">
                   <input id="modal-zipcode" name="zipcode" type="text" placeholder="Enter your zipcode" class="form-control"/>
                 </div>
-                <div class="form-group">
+
+                <!-- Phone / Tel -->
+                <div data-section="phone" class="form-group spa-section">
                   <label for="exampleFormControlInput1">Phone</label>
                   <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(555) 412-5151">
                 </div>
-                <div class="form-group">
+
+                <!-- Pickup Type / Select -->
+                <div data-section="type" class="form-group spa-section">
                   <label for="exampleFormControlSelect1">Pickup Type</label>
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>Commerical</option>
                     <option>Residential</option>
                   </select>
                 </div>
-                <div class="form-group">
+
+                <!-- One-Time or Bi-weekly / Radio -->
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    One-Time
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Bi-weekly
+                  </label>
+                </div>
+
+                <!-- Additional Notes / Textarea -->
+                <div data-section="notes" class="form-group spa-section">
                   <label for="exampleFormControlTextarea1">Additional Notes</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+
+                <!-- Sign me up for G.I.Haul Newsletter / Checkbox -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Sign me up for G.I.Haul Newsletter</label>
+                </div>
               </div>
+
               <!-- Modal Footer -->
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary">Submit</button>

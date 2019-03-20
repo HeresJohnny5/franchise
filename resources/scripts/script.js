@@ -8,8 +8,6 @@ $(document).ready(function() {
    $('#go-btn').click(function() {
      var zipcode = $('#zipcode').val();
 
-     debugger
-
      getZipcode(zipcode);
    });
 });
