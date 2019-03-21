@@ -202,16 +202,13 @@ footer {
 	width: 18%;
 }
 
-
-
-
-
-
-
-/* .spa-section {
+/********************/
+/* FORM SECTION CSS */
+/********************/
+.spa-section {
 	display: none;
 }
 
 .modal-body .spa-section:first-child {
 	display: block;
-} */
+}
