@@ -1,24 +1,31 @@
 function getZipcode(zipcode) {
-  console.log(zipcode);
-  $('#modal-zipcode').val(zipcode);
+  $('#formControlZipcode').val(zipcode);
 }
 
 function spaSection() {
-  $('.spa-section').one('keyup', function() {
-    // console.log('this: ', this);
-    // console.log($(this).attr('data-section'));
-
+  $('.spa-section').one('click', function() {
     var dataSectionAttr = $(this).attr('data-section');
-    console.log(dataSectionAttr);
 
-    var dataNextConditional = $(`[data-section="${dataSectionAttr}"]`).next('.spa-section').length;
-
-    if (dataSectionAttr === "type") {
-      console.log('Cool')
-    } else {
-      if (dataNextConditional === 1) {
+    if (dataSectionAttr === 'email') {
+      $('.spa-section').one('keyup', function() {
+        $(`[data-section="${dataSectionAttr}"]`).next('.spa-section').show().next('.spa-section').show();
+      });
+    } else if (dataSectionAttr === 'phone' || dataSectionAttr === 'notes') {
+      $('.spa-section').one('keyup', function() {
         $(`[data-section="${dataSectionAttr}"]`).next('.spa-section').show();
-      }
+      });
+    } else if (dataSectionAttr === 'frequency-input1') {
+      $('.spa-section').on('change', function() {
+        $(`[data-section="${dataSectionAttr}"]`).next('.spa-section').show().next('.spa-section').show();
+
+        $('button').attr("disabled", false);
+      });
+    } else if (dataSectionAttr === 'type') {
+      $('.spa-section').on('change', function() {
+        $(`[data-section="${dataSectionAttr}"]`).next('.spa-section').show().next('.spa-section').show();
+      });
+    } else {
+      console.log('ldjfldjfldfjl');
     }
   });
 }

@@ -76,25 +76,27 @@
               <div class="modal-body">
                 <!-- Email address / email -->
                 <div data-section="email" class="form-group spa-section">
-                  <label for="exampleFormControlInput1">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <label for="formControlEmail">Email address</label>
+                  <input id="formControlEmail" class="form-control" type="email"  placeholder="name@example.com">
                 </div>
 
                 <!-- Zipcode / Text -->
                 <div data-section="zipcode" class="form-group spa-section">
-                  <input id="modal-zipcode" name="zipcode" type="text" placeholder="Enter your zipcode" class="form-control"/>
+                  <label for="formControlZipcode">Zipcode</label>
+                  <input id="formControlZipcode" class="form-control" name="zipcode" type="text" placeholder="Enter your zipcode" />
                 </div>
 
                 <!-- Phone / Tel -->
                 <div data-section="phone" class="form-group spa-section">
-                  <label for="exampleFormControlInput1">Phone</label>
-                  <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(555) 412-5151">
+                  <label for="formControlPhone">Phone</label>
+                  <input id="formControlPhone" class="form-control" type="tel" placeholder="(555) 412-5151">
                 </div>
 
                 <!-- Pickup Type / Select -->
                 <div data-section="type" class="form-group spa-section">
-                  <label for="exampleFormControlSelect1">Pickup Type</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <label for="formControlType">Pickup Type</label>
+                  <select id="formControlType" class="form-control">
+                    <option disabled selected>Select your Pickup Type</option>
                     <option>Commerical</option>
                     <option>Residential</option>
                   </select>
@@ -102,13 +104,13 @@
 
                 <!-- One-Time or Bi-weekly / Radio -->
                 <div data-section="frequency-input1" class="form-check spa-section">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <input id="exampleRadios1" class="form-check-input" type="radio" name="exampleRadios"  value="option1">
                   <label class="form-check-label" for="exampleRadios1">
                     One-Time
                   </label>
                 </div>
                 <div data-section="frequency-input1" class="form-check spa-section">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <input id="exampleRadios2" class="form-check-input" type="radio" name="exampleRadios" value="option2">
                   <label class="form-check-label" for="exampleRadios2">
                     Bi-weekly
                   </label>
@@ -117,7 +119,7 @@
                 <!-- Additional Notes / Textarea -->
                 <div data-section="notes" class="form-group spa-section">
                   <label for="exampleFormControlTextarea1">Additional Notes</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea id="exampleFormControlTextarea1" class="form-control" rows="3" placeholder="Pickup Description"></textarea>
                 </div>
 
                 <!-- Sign me up for G.I.Haul Newsletter / Checkbox -->
@@ -129,7 +131,7 @@
 
               <!-- Modal Footer -->
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button id="form-submit" class="btn btn-primary" type="button" disabled>Submit</button>
               </div>
             </div>
           </form>
