@@ -6,7 +6,5 @@ G.I.Haul, a Pittsburgh junk removal company, is franchising and needs separate m
 
 ## Objectives:
 
-- Educate customers on bone-conductive technology
-- Inform customers about the sunglasses specifications, ex: key terms
 - Measure engagement on the website
 - Capture customer information
