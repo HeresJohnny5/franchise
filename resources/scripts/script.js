@@ -25,13 +25,18 @@ function spaSection() {
         $(`[data-section="${dataSectionAttr}"]`).next('.spa-section').show().next('.spa-section').show();
       });
     } else {
-      console.log('ldjfldjfldfjl');
+      // remove if not necessary
     }
   });
 }
 
 $(document).ready(function() {
   // Event Handlers
+  $('#form-quote').submit(function(e) {
+    e.preventDefault(); // prevents the browser from reloading
+    console.log(e);
+  });
+
   $('#go-btn').click(function() {
     var zipcode = $('#zipcode').val();
 
