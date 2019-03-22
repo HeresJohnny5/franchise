@@ -34,7 +34,7 @@ $(document).ready(function() {
   // Event Handlers
   $('#form-quote').submit(function(e) {
     e.preventDefault(); // prevents the browser from reloading
-    console.log(e);
+    console.log($('form#form-quote').serializeObject());
   });
 
   $('#go-btn').click(function() {

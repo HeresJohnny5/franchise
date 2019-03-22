@@ -77,7 +77,7 @@
                 <!-- Email address / email -->
                 <div data-section="email" class="form-group spa-section">
                   <label for="formControlEmail">Email address</label>
-                  <input id="formControlEmail" class="form-control" type="email"  placeholder="name@example.com">
+                  <input id="formControlEmail" class="form-control" name="email" type="email"  placeholder="name@example.com">
                 </div>
 
                 <!-- Zipcode / Text -->
@@ -89,13 +89,13 @@
                 <!-- Phone / Tel -->
                 <div data-section="phone" class="form-group spa-section">
                   <label for="formControlPhone">Phone</label>
-                  <input id="formControlPhone" class="form-control" type="tel" placeholder="(555) 412-5151">
+                  <input id="formControlPhone" class="form-control" name="phone" type="tel" placeholder="(555) 412-5151">
                 </div>
 
                 <!-- Pickup Type / Select -->
                 <div data-section="type" class="form-group spa-section">
                   <label for="formControlType">Pickup Type</label>
-                  <select id="formControlType" class="form-control">
+                  <select id="formControlType" class="form-control" name="type">
                     <option disabled selected>Select your Pickup Type</option>
                     <option>Commerical</option>
                     <option>Residential</option>
@@ -104,13 +104,13 @@
 
                 <!-- One-Time or Bi-weekly / Radio -->
                 <div data-section="frequency-input1" class="form-check spa-section">
-                  <input id="exampleRadios1" class="form-check-input" type="radio" name="exampleRadios"  value="option1">
+                  <input id="exampleRadios1" class="form-check-input" type="radio" name="frequency"  value="option1">
                   <label class="form-check-label" for="exampleRadios1">
                     One-Time
                   </label>
                 </div>
                 <div data-section="frequency-input1" class="form-check spa-section">
-                  <input id="exampleRadios2" class="form-check-input" type="radio" name="exampleRadios" value="option2">
+                  <input id="exampleRadios2" class="form-check-input" type="radio" name="frequency" value="option2">
                   <label class="form-check-label" for="exampleRadios2">
                     Bi-weekly
                   </label>
@@ -119,12 +119,12 @@
                 <!-- Additional Notes / Textarea -->
                 <div data-section="notes" class="form-group spa-section">
                   <label for="exampleFormControlTextarea1">Additional Notes</label>
-                  <textarea id="exampleFormControlTextarea1" class="form-control" rows="3" placeholder="Pickup Description"></textarea>
+                  <textarea id="exampleFormControlTextarea1" class="form-control" name="notes" rows="3" placeholder="Pickup Description"></textarea>
                 </div>
 
                 <!-- Sign me up for G.I.Haul Newsletter / Checkbox -->
                 <div data-section="newsletter" class="form-check form-check-inline spa-section">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="sign-up" value="option1">
                   <label class="form-check-label" for="inlineCheckbox1">Sign me up for G.I.Haul Newsletter</label>
                 </div>
               </div>
