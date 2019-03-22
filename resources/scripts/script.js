@@ -30,11 +30,27 @@ function spaSection() {
   });
 }
 
+function formSubmit(name) {
+  var serializedData = $(document.forms[name]).serializeObject();
+  var url = 'https://script.google.com/macros/s/AKfycbwwkHHaaoRpS8KisOq15Mt-DUhKGFB53Bb-8tz0tgy3FRuiugxe/exec';
+
+  var jqxhr = $.ajax({
+    url,
+    method: "GET",
+    dataType: "json",
+    data: serializedData,
+    success: function(data){
+      console.log('success', data);
+    }
+  });
+}
+
 $(document).ready(function() {
   // Event Handlers
   $('#form-quote').submit(function(e) {
     e.preventDefault(); // prevents the browser from reloading
-    console.log($('form#form-quote').serializeObject());
+    // console.log($('form#form-quote').serializeObject());
+    formSubmit(e.currentTarget.name);
   });
 
   $('#go-btn').click(function() {
