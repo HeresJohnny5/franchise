@@ -51,6 +51,10 @@ $(document).ready(function() {
     e.preventDefault(); // prevents the browser from reloading
     // console.log($('form#form-quote').serializeObject());
     formSubmit(e.currentTarget.name);
+
+    $('#zipcode').val('');
+    document.getElementById('form-quote').reset();
+    $('.modal').modal('toggle');
   });
 
   $('#go-btn').click(function() {
