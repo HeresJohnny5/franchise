@@ -61,6 +61,8 @@ $(document).ready(function() {
     var zipcode = $('#zipcode').val();
 
     getZipcode(zipcode);
+    $('.spa-section').css('display', 'none');
+    $('.modal-body .spa-section:first-child').css('display', 'block');
 
     spaSection();
   });
